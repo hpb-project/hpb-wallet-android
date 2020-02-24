@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhaoxi.Open_source_Android.ui.activity.SwitchAddressActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+            android:id="@+id/recycler_with_refresh_ptr_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhaoxi.Open_source_Android.common.view.recycler.LoadMoreRecyclerView
+                android:id="@+id/token_more_list_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clipToPadding="false" />
+
+        </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_default_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

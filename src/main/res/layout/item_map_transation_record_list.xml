@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_map_transfer_layout_base"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_18"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <com.zhaoxi.Open_source_Android.common.view.CircleImageView
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"
+            app:border_color="@color/white"
+            app:border_width="0dp"
+            android:src="@mipmap/icon_header_defult"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_map_transfer_txt_type"
+                style="@style/common_txt_style_14_666"
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/item_map_transfer_txt_time"
+                style="@style/common_txt_style_12_999"
+                android:textSize="12dp"
+                android:layout_marginTop="@dimen/dp_2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/dp_18"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/item_map_transfer_txt_money"
+                style="@style/common_txt_style_14_666"
+                android:textSize="@dimen/dp_24"
+                android:textColor="@color/color_3FE77B" />
+            <TextView
+                style="@style/common_txt_style_14_666"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:textSize="14dp"
+                android:text="@string/wallet_manager_txt_money_unit_01"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/common_line_horizontal"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_42"/>
+
+</LinearLayout>

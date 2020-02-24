@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/common_txt_style_15_333"
+                android:layout_margin="@dimen/dp_18"
+                android:text="@string/export_mnemonic_txt_tip_05"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                style="@style/common_txt_style_15_333"
+                android:gravity="center"
+                android:text="@string/export_mnemonic_txt_tip_06"
+                android:textColor="@color/color_9C9EB9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                android:background="@drawable/draw_btn_defult_bg_01"
+                android:minHeight="50dp"
+                android:padding="@dimen/dp_12">
+
+                <com.zhaoxi.Open_source_Android.common.view.AutoWrapViewGroup
+                    android:id="@+id/export_mnemonic_two_flow_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.zhaoxi.Open_source_Android.common.view.AutoWrapViewGroup
+                android:id="@+id/export_mnemonic_two_flow_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/export_mnemonic_two_comfrim"
+            style="@style/common_btn_style_defult"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/draw_btn_defult_bg_01"
+            android:text="@string/dailog_psd_btn_ok"
+            android:enabled="false"
+            android:textAllCaps="false"
+            android:textColor="@color/color_2E2F47" />
+    </RelativeLayout>
+</LinearLayout>

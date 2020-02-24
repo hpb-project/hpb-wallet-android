@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dp_25">
+
+    <CheckBox
+        android:id="@+id/select_token_id_check_box"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:button="@drawable/selector_token_manager_check_box_src" />
+
+    <TextView
+        android:id="@+id/tv_token_sort_number"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:gravity="center"
+        android:textColor="@color/color_334364"
+        android:textSize="@dimen/sp_15"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_token_id"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_6"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:maxWidth="@dimen/dp_100"
+        android:singleLine="true"
+        android:textColor="@color/color_54658B"
+        android:textSize="@dimen/sp_15"
+        tools:text="344556" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_token_header"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:src="@mipmap/icon_default_header" />
+
+
+</LinearLayout>

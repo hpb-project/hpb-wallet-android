@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_18"
+        android:paddingEnd="@dimen/dp_18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_main_activity_tab_home"
+            android:textColor="@color/color_191E25"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main_home_right_top_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_26"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_main_right_top_bg"
+            android:drawableEnd="@mipmap/icon_switch"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxWidth="@dimen/dp_76"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_3"
+            android:textColor="@color/color_191E25"
+            tools:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:background="@mipmap/icon_main_assets_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_32"
+            android:paddingTop="35dp"
+            android:paddingRight="@dimen/dp_32">
+
+            <TextView
+                android:id="@+id/tv_main_top_title_unit"
+                style="@style/common_txt_style_12_999"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_switch_address_assets_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_4"
+                    android:text="@string/activity_rmb_value"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/main_home_wallet_txt_allmoney"
+                    style="@style/common_txt_style_12_999"
+                    android:maxLines="1"
+                    android:text="@string/fragment_main_home_no_yuan"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/main_home_wallet_txt_address"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_width="@dimen/dp_200"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@color/color_F3FBFF"
+                    tools:text="" />
+
+                <ImageView
+                    android:id="@+id/main_home_wallet_iv_address"
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:src="@mipmap/icon_main_copy_address" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/main_home_wallet_txt_type"
+            style="@style/common_txt_style_12_999"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dp_30"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@mipmap/icon_wallet_cold_status"
+            android:gravity="center"
+            android:text="@string/import_wallet_item_coldwallet"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <!--扫一扫、收款、转账,同步资产-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_12"
+        android:paddingEnd="@dimen/dp_12">
+
+        <LinearLayout
+            android:id="@+id/main_home_ll_scan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_72"
+                android:layout_height="@dimen/dp_72"
+                android:src="@mipmap/icon_main_scan"
+                android:visibility="visible" />
+
+            <TextView
+
+                style="@style/main_home_txt_top"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:gravity="center_horizontal"
+                android:text="@string/main_home_top_txt_01"
+                android:textColor="@color/base_new_theme_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_home_ll_collection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_72"
+                android:layout_height="@dimen/dp_72"
+                android:src="@mipmap/icon_main_collection" />
+
+            <TextView
+                style="@style/main_home_txt_top"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="@string/main_home_top_txt_02"
+                android:textColor="@color/base_new_theme_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_home_ll_transfer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_72"
+                android:layout_height="@dimen/dp_72"
+                android:src="@mipmap/icon_main_transfer" />
+
+            <TextView
+                style="@style/main_home_txt_top"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="@string/main_home_top_txt_03"
+                android:textColor="@color/base_new_theme_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <!--同步资产-->
+        <LinearLayout
+            android:id="@+id/main_home_ll_sync_assets"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dp_72"
+                android:layout_height="@dimen/dp_72"
+                android:src="@mipmap/icon_sync_assets" />
+
+            <TextView
+                style="@style/main_home_txt_top"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="@string/main_home_top_txt_04"
+                android:textColor="@color/base_new_theme_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--没有钱包时显示该view-->
+        <LinearLayout
+            android:id="@+id/main_home_layout_no_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_24"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/main_home_no_wallet_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_main_home_nowallet" />
+
+            <LinearLayout
+                android:id="@+id/main_home_ll_no_wallet"
+                android:layout_width="@dimen/dp_152"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@drawable/shape_main_create_wallet_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_add" />
+
+                <TextView
+                    style="@style/common_txt_style_15_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_6"
+                    android:text="@string/txt_main_home_txt_02"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_home_assets_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_18"
+            android:paddingEnd="@dimen/dp_18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/fragment_main_home_assets_list"
+                android:textColor="@color/color_191E25"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/main_home_iv_token_manager"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_0"
+                android:paddingBottom="@dimen/dp_10"
+                android:src="@mipmap/icon_edit_assets_list" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

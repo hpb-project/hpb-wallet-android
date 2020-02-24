@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_theme_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/wallet_details_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:paddingLeft="@dimen/dp_18"
+                    android:paddingRight="@dimen/dp_18">
+
+                    <TextView
+                        style="@style/common_txt_style_15_333"
+                        android:layout_centerVertical="true"
+                        android:text="@string/receive_activity_txt_top_01"
+                        android:textColor="@color/color_9C9EB9" />
+
+                    <TextView
+                        android:id="@+id/transfer_one_txt"
+                        style="@style/common_txt_style_15_333"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/wallet_manager_txt_money_unit_01" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_18"
+                        android:layout_height="@dimen/dp_18"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@id/transfer_one_txt"
+                        android:src="@mipmap/icon_item_logo_hpb" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line_height"
+                    android:paddingLeft="@dimen/dp_18"
+                    android:paddingRight="@dimen/dp_18">
+
+                    <TextView
+                        style="@style/common_txt_style_15_333"
+                        android:layout_centerVertical="true"
+                        android:text="转出地址"
+                        android:textColor="@color/color_9C9EB9" />
+
+                    <TextView
+                        android:id="@+id/transfer_activity_edit_form_address"
+                        style="@style/common_txt_style_15_333"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="65dp"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/color_66688f" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line_height"
+                    android:paddingLeft="@dimen/dp_18"
+                    android:paddingRight="@dimen/dp_18">
+
+                    <TextView
+                        style="@style/common_txt_style_15_333"
+                        android:layout_centerVertical="true"
+                        android:text="转入地址"
+                        android:textColor="@color/color_9C9EB9" />
+
+                    <TextView
+                        android:id="@+id/transfer_activity_edit_to_address"
+                        style="@style/common_txt_style_15_333"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="65dp"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/color_66688f" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/common_txt_style_14_666"
+                android:background="#312E2F47"
+                android:paddingBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingRight="@dimen/dp_18"
+                android:paddingTop="@dimen/dp_12"
+                android:text="@string/transfer_activity_txt_04"
+                android:textColor="@color/color_FF4465" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_26"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_marginRight="@dimen/dp_18"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48">
+
+                    <TextView
+                        style="@style/common_txt_style_15_333"
+                        android:layout_centerVertical="true"
+                        android:text="@string/transfer_activity_txt_05"
+                        android:textColor="@color/color_black_999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/txt_transfer_01"
+                        style="@style/common_txt_style_15_333"
+                        android:layout_centerVertical="true"
+                        android:text="@string/wallet_manager_txt_money_unit_01"
+                        android:textColor="@color/color_9C9EB9"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/transfer_activity_edit_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/txt_transfer_01"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_15" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_line_horizontal"
+                    android:layout_marginTop="@dimen/dp_4" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_25">
+                    <TextView
+                        android:id="@+id/transfer_activity_fee_des"
+                        style="@style/common_txt_style_15_333"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@mipmap/icon_transfer_fee_des"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:text="@string/transfer_activity_txt_10"
+                        android:textColor="@color/color_9C9EB9"
+                        android:textSize="@dimen/sp_14" />
+                    <TextView
+                        android:id="@+id/transfer_activity_fee_money"
+                        style="@style/common_txt_style_15_333"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/transfer_activity_btn_submit"
+                style="@style/common_btn_style_defult"
+                android:layout_margin="@dimen/dp_18"
+                android:background="@mipmap/icon_btn_orgen_bg"
+                android:textAllCaps="false"
+                android:text="发送签名"
+                android:textColor="@color/color_F5FF30" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_vote_pop_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_44"
+        android:layout_marginRight="@dimen/dp_44">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/bg_common_whait_dialog"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/dialog_sensor_end_txt_status"
+                style="@style/common_txt_style_14_666"
+                android:textColor="@color/color_54658B" />
+
+            <TextView
+                android:id="@+id/dialog_sensor_end_btn_ok"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_18"
+                android:background="@drawable/bg_sensor_btn"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <!--显示摇到红包和没有摇到红包的图片，默认显示没有摇到红包图片-->
+        <ImageView
+            android:id="@+id/iv_main_read_pack_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_sensor_top" />
+
+        <!--关闭红包按钮-->
+        <ImageView
+            android:id="@+id/iv_main_red_pack_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_main_read_pack_close" />
+    </RelativeLayout>
+</LinearLayout>

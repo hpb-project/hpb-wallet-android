@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/address_book_layout_opencloud"
+        style="@style/common_layout_style"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/common_txt_style_15_333"
+            android:layout_centerVertical="true"
+            android:text="@string/main_me_txt_address_01"
+            android:drawableLeft="@mipmap/icon_cloud_light"
+            android:drawablePadding="10dp"
+            android:textColor="@color/color_black_333" />
+
+        <TextView
+            android:id="@+id/system_txt_openhand_status"
+            style="@style/common_txt_style_14_666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/color_66688f" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_common_item_right_arrow" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/address_book_refresh_ptr_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/color_F5F5F5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/address_book_layout_no_data"
+            style="@style/common_txt_style_12_999"
+            android:layout_marginTop="45dp"
+            android:drawablePadding="20dp"
+            android:drawableTop="@mipmap/icon_address_book_empty"
+            android:gravity="center"
+            android:text="@string/main_me_txt_address_02"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/address_book_layout_has_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/address_book_list_contract"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:id="@+id/address_book_list_top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/address_book_list_top_char"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="18dp"
+                    android:text="A"
+                    android:textColor="@color/color_66688F"
+                    android:textSize="14dp" />
+                <View style="@style/common_line_horizontal_01"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/address_book_list_select_sidrbar_dialog"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/address_book_toast_show"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="30.0dip"
+                android:visibility="gone"/>
+
+            <com.zhaoxi.Open_source_Android.common.view.addressbook.SideBar
+                android:id="@+id/address_book_list_sidrbar"
+                android:layout_width="25.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="45dp"
+                android:layout_marginTop="45dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 导入钱包 -->
+    <string-array name="import_wallet_type_tabs">
+        <item>@string/import_wallet_item_zhujici</item>
+        <item>@string/import_wallet_item_keystore</item>
+        <item>@string/import_wallet_item_privatekey</item>
+        <item>@string/import_wallet_item_coldwallet</item>
+    </string-array>
+
+    <string-array name="import_wallet_type_tabs1">
+        <item>@string/import_wallet_item_keystore</item>
+        <item>@string/import_wallet_item_privatekey</item>
+    </string-array>
+
+    <!-- 导出keystore -->
+    <string-array name="export_keystore_type_tabs">
+        <item>@string/export_keystore_item_file</item>
+        <item>@string/export_keystore_item_qr</item>
+    </string-array>
+
+    <string-array name="vote_detials_tabs">
+        <item>@string/export_keystore_item_file</item>
+        <item>@string/export_keystore_item_qr</item>
+    </string-array>
+
+    <string-array name="main_find_tabs">
+        <item>@string/main_find_txt_01</item>
+        <item>@string/main_find_txt_02</item>
+    </string-array>
+
+    <string-array name="red_wait_anim">
+        <item>@drawable/packing_2</item>
+        <item>@drawable/packing_4</item>
+        <item>@drawable/packing_6</item>
+        <item>@drawable/packing_8</item>
+        <item>@drawable/packing_10</item>
+        <item>@drawable/packing_12</item>
+        <item>@drawable/packing_14</item>
+        <item>@drawable/packing_16</item>
+        <item>@drawable/packing_18</item>
+        <item>@drawable/packing_20</item>
+        <item>@drawable/packing_22</item>
+        <item>@drawable/packing_24</item>
+        <item>@drawable/packing_26</item>
+        <item>@drawable/packing_28</item>
+        <item>@drawable/packing_30</item>
+        <item>@drawable/packing_32</item>
+        <item>@drawable/packing_34</item>
+        <item>@drawable/packing_36</item>
+        <item>@drawable/packing_38</item>
+        <item>@drawable/packing_40</item>
+        <item>@drawable/packing_42</item>
+        <item>@drawable/packing_44</item>
+        <item>@drawable/packing_47</item>
+        <item>@drawable/packing_49</item>
+        <item>@drawable/packing_51</item>
+        <item>@drawable/packing_53</item>
+        <item>@drawable/packing_55</item>
+        <item>@drawable/packing_57</item>
+        <item>@drawable/packing_59</item>
+        <item>@drawable/packing_61</item>
+        <item>@drawable/packing_63</item>
+        <item>@drawable/packing_65</item>
+        <item>@drawable/packing_67</item>
+        <item>@drawable/packing_69</item>
+        <item>@drawable/packing_71</item>
+        <item>@drawable/packing_73</item>
+        <item>@drawable/packing_75</item>
+        <item>@drawable/packing_77</item>
+        <item>@drawable/packing_79</item>
+        <item>@drawable/packing_81</item>
+        <item>@drawable/packing_83</item>
+        <item>@drawable/packing_85</item>
+        <item>@drawable/packing_87</item>
+        <item>@drawable/packing_87</item>
+    </string-array>
+
+    <string-array name="splash_anim">
+        <item>@drawable/anmiation_logo_63</item>
+        <item>@drawable/anmiation_logo_64</item>
+        <item>@drawable/anmiation_logo_65</item>
+        <item>@drawable/anmiation_logo_66</item>
+        <item>@drawable/anmiation_logo_67</item>
+        <item>@drawable/anmiation_logo_68</item>
+        <item>@drawable/anmiation_logo_69</item>
+        <item>@drawable/anmiation_logo_70</item>
+        <item>@drawable/anmiation_logo_71</item>
+        <item>@drawable/anmiation_logo_72</item>
+        <item>@drawable/anmiation_logo_73</item>
+        <item>@drawable/anmiation_logo_74</item>
+        <item>@drawable/anmiation_logo_75</item>
+        <item>@drawable/anmiation_logo_76</item>
+        <item>@drawable/anmiation_logo_77</item>
+        <item>@drawable/anmiation_logo_78</item>
+        <item>@drawable/anmiation_logo_79</item>
+        <item>@drawable/anmiation_logo_80</item>
+        <item>@drawable/anmiation_logo_81</item>
+        <item>@drawable/anmiation_logo_82</item>
+        <item>@drawable/anmiation_logo_91</item>
+        <item>@drawable/anmiation_logo_92</item>
+        <item>@drawable/anmiation_logo_93</item>
+        <item>@drawable/anmiation_logo_94</item>
+        <item>@drawable/anmiation_logo_95</item>
+        <item>@drawable/anmiation_logo_96</item>
+        <item>@drawable/anmiation_logo_97</item>
+        <item>@drawable/anmiation_logo_98</item>
+        <item>@drawable/anmiation_logo_99</item>
+        <item>@drawable/anmiation_logo_100</item>
+        <item>@drawable/anmiation_logo_101</item>
+        <item>@drawable/anmiation_logo_102</item>
+        <item>@drawable/anmiation_logo_103</item>
+        <item>@drawable/anmiation_logo_104</item>
+        <item>@drawable/anmiation_logo_105</item>
+        <item>@drawable/anmiation_logo_106</item>
+        <item>@drawable/anmiation_logo_107</item>
+        <item>@drawable/anmiation_logo_108</item>
+        <item>@drawable/anmiation_logo_109</item>
+        <item>@drawable/anmiation_logo_110</item>
+        <item>@drawable/anmiation_logo_111</item>
+        <item>@drawable/anmiation_logo_112</item>
+        <item>@drawable/anmiation_logo_113</item>
+        <item>@drawable/anmiation_logo_114</item>
+        <item>@drawable/anmiation_logo_115</item>
+        <item>@drawable/anmiation_logo_116</item>
+        <item>@drawable/anmiation_logo_117</item>
+        <item>@drawable/anmiation_logo_118</item>
+        <item>@drawable/anmiation_logo_119</item>
+        <item>@drawable/anmiation_logo_120</item>
+        <item>@drawable/anmiation_logo_121</item>
+        <item>@drawable/anmiation_logo_122</item>
+        <item>@drawable/anmiation_logo_123</item>
+        <item>@drawable/anmiation_logo_124</item>
+        <item>@drawable/anmiation_logo_125</item>
+        <item>@drawable/anmiation_logo_126</item>
+        <item>@drawable/anmiation_logo_127</item>
+        <item>@drawable/anmiation_logo_128</item>
+        <item>@drawable/anmiation_logo_129</item>
+        <item>@drawable/anmiation_logo_130</item>
+    </string-array>
+
+</resources>

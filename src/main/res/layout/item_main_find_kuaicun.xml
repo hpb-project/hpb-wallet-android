@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp_18"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/main_find_news_kuaixun_time"
+            style="@style/common_txt_style_15_333"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_main_kx_tip"
+            android:drawablePadding="@dimen/dp_8" />
+        <TextView
+            android:id="@+id/main_find_news_kuaixun_share"
+            style="@style/common_txt_style_12_999"
+            android:textSize="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_black_radius_2"
+            android:text="@string/main_find_txt_03"/>
+    </RelativeLayout>
+    <com.zhaoxi.Open_source_Android.common.view.ExpandableTextView
+        android:id="@+id/main_find_news_kuaixun_content"
+        style="@style/common_txt_style_14_666"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:lineSpacingExtra="3dp"
+        app:etv_MaxLinesOnShrink="5"
+        app:etv_ToExpandHintColor="@color/color_4A5FE2"
+        app:etv_ToShrinkHintShow="false"/>
+
+</LinearLayout>

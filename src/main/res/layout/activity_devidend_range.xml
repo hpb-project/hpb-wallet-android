@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_18"
+        android:paddingBottom="@dimen/dp_18">
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_54658B"
+            android:paddingLeft="@dimen/dp_18"
+            android:text="@string/activity_cion_fh_txt_10_05_02"/>
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_54658B"
+            android:gravity="center"
+            android:text="@string/activity_cion_fh_txt_21_06"/>
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:textColor="@color/color_54658B"
+            android:text="@string/activity_cion_fh_txt_21_07"/>
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/color_54658B"
+            android:text="@string/activity_cion_fh_txt_21_08"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_d8d8d8"/>
+    <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+        android:id="@+id/activty_devidend_choose_range_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.zhaoxi.Open_source_Android.common.view.recycler.LoadMoreRecyclerView
+            android:id="@+id/activty_devidend_choose_range_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false" />
+
+    </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_d8d8d8"/>
+        <CheckBox
+            android:id="@+id/activty_devidend_choose_range_ckeckbox_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_choose_devidend_range"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56dp">
+            <TextView
+                style="@style/common_txt_style_14_666"
+                android:textColor="@color/color_293651"
+                android:text="@string/activity_cion_fh_txt_10_05_03"/>
+            <TextView
+                android:id="@+id/activty_devidend_choose_range_txt_range"
+                style="@style/common_txt_style_14_666"
+                android:textColor="@color/color_54658B"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="(300/1000)"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/activty_devidend_choose_range_txt_confim"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/color_54658B"
+            android:layout_alignParentRight="true"
+            android:text="@string/activity_cion_fh_txt_10_05_04"/>
+    </RelativeLayout>
+</LinearLayout>
+
+
+

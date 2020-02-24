@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.zhaoxi.Open_source_Android.ui.activity.SwitchAddressActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_BABDC1"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_10"
+        android:visibility="gone">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            android:background="@drawable/shape_token_manager_seach_bg"
+            android:drawableStart="@mipmap/icon_token_manager_search"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_input_token_name_or_address"
+            android:maxLines="1"
+            android:padding="@dimen/dp_10"
+            android:textColorHint="@color/color_BABDC1"
+            android:textCursorDrawable="@drawable/drawable_cursor"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Open_source_Androidn_source_Android.dapp.common.view.refresh.MyPtrFrameLayout-->
+            <!--android:id="@+id/recycler_with_refresh_ptr_frame_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/token_manager_recycler_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</Open_source_Androidn_source_Android.dapp.common.view.refresh.MyPtrFrameLayout>-->
+
+
+        <com.zhaoxi.Open_source_Android.common.view.lrecyclerview.recyclerview.LRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/token_manager_recycler_view"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_default_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </FrameLayout>
+
+
+</LinearLayout>

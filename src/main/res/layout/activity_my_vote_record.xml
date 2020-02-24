@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_myvote_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2E2F47"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+        android:id="@+id/activity_myvote_record_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.zhaoxi.Open_source_Android.common.view.recycler.LoadMoreRecyclerView
+            android:id="@+id/activity_myvote_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"/>
+    </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+
+</LinearLayout>

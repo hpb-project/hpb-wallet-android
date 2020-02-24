@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingTop="@dimen/dp_18"
+                android:paddingRight="@dimen/dp_18"
+                android:paddingBottom="@dimen/dp_18">
+
+                <ImageView
+                    android:id="@+id/transaction_record_detail_iv_status"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/transation_record_details_txt_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:textColor="@color/color_black_333"
+                    android:textSize="22sp"/>
+
+                <!--代币类型-->
+                <TextView
+                    android:id="@+id/item_token_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/shape_main_right_top_bg"
+                    android:paddingStart="@dimen/dp_5"
+                    android:paddingEnd="@dimen/dp_5"
+                    android:text="@string/hrc_721"
+                    android:textColor="@color/color_9AA0AB"
+                    android:textSize="@dimen/sp_10"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/transation_record_details_txt_resouce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="@string/tansfer_recode_details_txt_01"
+                    android:textColor="@color/color_BABDC1"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/transaction_record_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/color_EAECEE" />
+
+            <include
+                android:id="@+id/view_token_id_more"
+                layout="@layout/view_token_id_layout"
+                android:visibility="gone" />
+
+            <!--分割线-->
+            <View
+                android:id="@+id/activity_trans_detail_underline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/color_F5F5F5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_18">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/common_txt_style_14_666"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tansfer_recode_details_txt_02"
+                        android:textColor="@color/color_BABDC1" />
+
+                    <ImageView
+                        android:id="@+id/transation_record_details_img_fromaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@mipmap/icon_transfer_record_copy" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/transation_record_details_txt_fromaddress"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black_333"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/common_txt_style_14_666"
+                        android:text="@string/tansfer_recode_details_txt_03"
+                        android:textColor="@color/color_BABDC1" />
+
+                    <ImageView
+                        android:id="@+id/transation_record_details_img_toaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@mipmap/icon_transfer_record_copy" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/transation_record_details_txt_toaddress"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black_333"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/common_txt_style_14_666"
+                        android:text="@string/tansfer_recode_details_txt_06"
+                        android:textColor="@color/color_BABDC1" />
+
+                    <ImageView
+                        android:id="@+id/transation_record_details_img_tansfernum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@mipmap/icon_transfer_record_copy" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/transation_record_details_txt_tansfernum"
+                        style="@style/common_txt_style_12_999"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:textColor="@color/color_black_333"/>
+
+                    <ImageView
+                        android:id="@+id/transation_record_details_img_liulanqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp_10"
+                        android:src="@mipmap/icon_transfer_record_right" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/common_txt_style_14_666"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/tansfer_recode_details_txt_07"
+                    android:textColor="@color/color_BABDC1" />
+
+                <TextView
+                    android:id="@+id/transation_record_details_txt_qukuai"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black_333" />
+
+                <TextView
+                    android:id="@+id/transaction_tv_fee_title"
+                    style="@style/common_txt_style_14_666"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/tansfer_recode_details_txt_04"
+                    android:textColor="@color/color_BABDC1" />
+
+                <TextView
+                    android:id="@+id/transation_record_details_txt_palymoney"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black_333" />
+
+                <TextView
+                    style="@style/common_txt_style_14_666"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/tansfer_recode_details_txt_08"
+                    android:textColor="@color/color_BABDC1" />
+
+                <TextView
+                    android:id="@+id/transation_record_details_txt_time"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black_333" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

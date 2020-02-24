@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#40000000">
+    <LinearLayout
+        android:id="@+id/item_choose_wallet_layout_emppty"
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="1.2"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/transparent"/>
+    <ScrollView
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:background="@color/color_2E2F47"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingRight="@dimen/dp_18"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:src="@mipmap/icon_main_title_choosse"/>
+                <TextView style="@style/common_txt_style_15_333"
+                    android:textColor="@color/white"
+                    android:text="@string/main_home_pop_choose_wallet_title"/>
+            </LinearLayout>
+            <com.zhaoxi.Open_source_Android.common.view.ListViewShowAll
+                android:id="@+id/item_choose_wallet_list"
+                style="@style/common_noline_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

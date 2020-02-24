@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhaoxi.Open_source_Android.ui.activity.SwitchAddressActivity">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <View
+        android:id="@+id/main_home_top_star"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:background="@color/white" />
+
+    <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+        android:id="@+id/recycler_with_refresh_ptr_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wallet_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--最下层item属性-->
+    <item>
+        <shape>
+            <!--无圆角-->
+            <corners android:radius="0dp" />
+            <!--线条颜色-->
+            <gradient
+                android:endColor="#FFE4E3E3"
+                android:startColor="#FFE4E3E3" />
+        </shape>
+    </item>
+
+    <!--上层item属性-->
+    <item>
+        <clip>
+            <shape>
+                <!--无圆角-->
+                <corners android:radius="0dip" />
+                <!--线条颜色 渐变,由深到浅-->
+                <gradient
+                    android:centerColor="@color/color_29CF7D"
+                    android:endColor="#29cd00"
+                    android:startColor="@color/color_00BC9A" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

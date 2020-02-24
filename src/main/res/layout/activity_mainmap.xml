@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/common_toolbar" />
+
+    <TextView
+        android:id="@+id/activity_mianmap_txt_map_des"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:layout_marginBottom="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="@color/base_theme_color"
+        android:textSize="@dimen/sp_15"
+        android:lineSpacingExtra="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center">
+        <Button
+            android:id="@+id/activity_mianmap_btn_import"
+            style="@style/common_btn_style_defult"
+            android:layout_margin="@dimen/dp_18"
+            android:background="@drawable/draw_btn_defult_bg_03"
+            android:text="@string/import_wallet_item_zhujici_btn_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/activity_mianmap_txt_gomap"
+            style="@style/common_btn_style_defult"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            android:background="@drawable/draw_btn_defult_bg_03"
+            android:text="@string/mainmap_btn_txt_list"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

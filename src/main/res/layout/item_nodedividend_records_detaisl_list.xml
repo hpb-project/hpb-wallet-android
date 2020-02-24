@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/icon_node_dividend_records_detials"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dp_18"
+    android:layout_marginLeft="@dimen/dp_18"
+    android:layout_marginRight="@dimen/dp_18"
+    android:layout_marginTop="@dimen/dp_18">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_width="match_parent"
+            android:text="@string/activity_cion_fh_txt_17"
+            android:alpha="0.7"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_node_records_details_txt_rank"
+            style="@style/common_txt_style_12_999"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_width="wrap_content"
+            android:text="@string/activity_cion_fh_txt_19"
+            android:alpha="0.7"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_node_records_details_txt_pollnum"
+            style="@style/common_txt_style_12_999"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_width="wrap_content"
+            android:text="@string/activity_cion_fh_txt_20"
+            android:alpha="0.7"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_node_records_details_txt_dividend"
+            style="@style/common_txt_style_12_999"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:text="@string/activity_cion_fh_txt_18"
+            android:alpha="0.7"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_node_records_details_txt_address"
+            style="@style/common_txt_style_12_999"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:gravity="right"
+            android:layout_marginLeft="120dp"/>
+    </RelativeLayout>
+</LinearLayout>

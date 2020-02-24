@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_18"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/common_txt_style_14_666"
+            android:layout_width="95dp"
+            android:text="@string/main_me_txt_deatils_02"/>
+        <TextView
+            android:id="@+id/band_address_details_txt_name"
+            style="@style/common_txt_style_14_666"
+            android:textColor="@color/color_66688F" />
+    </LinearLayout>
+    <View style="@style/common_line_horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_18"
+        android:paddingBottom="@dimen/dp_18"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_18"
+            android:layout_marginRight="36dp">
+            <TextView
+                style="@style/common_txt_style_14_666"
+                android:layout_width="95dp"
+                android:text="@string/main_me_txt_deatils_03"/>
+            <TextView
+                android:id="@+id/band_address_details_txt_address"
+                style="@style/common_txt_style_14_666"
+                android:textColor="@color/color_66688F"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/band_address_details_img_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_marginTop="@dimen/dp_12"
+            android:src="@mipmap/icon_wallet_deatils_address"/>
+    </RelativeLayout>
+    <View style="@style/common_line_horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="18dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_cloud_grey"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/band_address_details_txt_warn_01"
+            style="@style/common_txt_style_12_999"
+            android:textColor="@color/color_9C9EB9"
+            android:text="@string/main_me_txt_deatils_04" />
+        <TextView
+            android:id="@+id/band_address_details_txt_warn_02"
+            style="@style/common_txt_style_12_999"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/main_me_txt_deatils_06" />
+    </LinearLayout>
+</LinearLayout>

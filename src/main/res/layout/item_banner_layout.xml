@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/banner_view_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <com.zhaoxi.Open_source_Android.common.view.RoundAngleImageView
+        android:id="@+id/banner_view_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:roundWidth="8dp"
+        app:roundHeight="8dp"
+        android:src="@mipmap/bg_banner"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/banner_view_txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@mipmap/icon_find_banner_bg"
+        android:layout_alignParentBottom="true"
+        android:textSize="14dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"/>
+</RelativeLayout>

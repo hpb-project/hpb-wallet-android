@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhaoxi.Open_source_Android.dapp">
+
+    <uses-sdk tools:overrideLibrary="cn.bingoogolapple.photopicker,cn.bingoogolapple.androidcommon.adapter" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.zhaoxi.Open_source_Android.common.base.DappApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+
+        <activity android:name="com.zhaoxi.Open_source_Android.ui.activity.ImgCatchActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zhaoxi.Open_source_Android.dapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- 启动页 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 引导页 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.GuideActivity"
+            android:screenOrientation="portrait" /> <!-- 主页 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" /> <!-- 系统设置 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SystemActivity"
+            android:screenOrientation="portrait" /> <!-- 生成二维码 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ReceivablesActivity"
+            android:screenOrientation="portrait" /> <!-- 转账 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TransferActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- html -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.CommonWebActivity"
+            android:screenOrientation="portrait" /> <!-- 多语言 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.LanguageManegerActivity"
+            android:screenOrientation="portrait" /> <!-- 钱包管理 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.WalletManagerActivity"
+            android:screenOrientation="portrait" /> <!-- 钱包详情 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.WalletDetailsActivity"
+            android:screenOrientation="portrait" /> <!-- 创建钱包 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.CreateWalletActivity"
+            android:screenOrientation="portrait" /> <!-- 修改钱包密码 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ChangeWalletPsdActivity"
+            android:screenOrientation="portrait" /> <!-- 导入钱包 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ImportWalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomStyledIndicators" /> <!-- 导出keystore -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ExportKeystoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomStyledIndicators" /> <!-- 导出助记词 1 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ExportMnemonicOneActivity"
+            android:screenOrientation="portrait" /> <!-- 导出助记词 2 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ExportMnemonicTwoActivity"
+            android:screenOrientation="portrait" /> <!-- 导出私钥 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ExportPrivateKeyActivity"
+            android:screenOrientation="portrait" /> <!-- 总资产 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TotalAssetsActivity"
+            android:screenOrientation="portrait" /> <!-- 交易记录 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TransationRecordActivity"
+            android:screenOrientation="portrait" /> <!-- 二维码扫描 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ScaningActivity"
+            android:screenOrientation="portrait" /> <!-- 创建钱包成功页 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.CreateWalletSucceseActivity"
+            android:screenOrientation="portrait" /> <!-- 交易记录详情 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TransferRecodeDetailsActivity"
+            android:screenOrientation="portrait" /> <!-- 消息中心 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.MessageCenterActivity"
+            android:screenOrientation="portrait" /> <!-- 帮助中心 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.HelpCenterActivity"
+            android:screenOrientation="portrait" /> <!-- 消息中心详情 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.MessageCenterDetailsActivity"
+            android:screenOrientation="portrait" /> <!-- 意见反馈 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.FeekBackActivity"
+            android:screenOrientation="portrait" /> <!-- 关于我们 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.AboutMeActivity"
+            android:screenOrientation="portrait" /> <!-- 竞选投票 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.VoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 投票节点介绍 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.VoteDetailsActivity"
+            android:screenOrientation="portrait" /> <!-- 主网映射 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.MainmapOneActivity"
+            android:screenOrientation="portrait" /> <!-- 映射列表 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.MainmapTwoActivity"
+            android:screenOrientation="portrait" /> <!-- 映射 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.MapTransferActivity"
+            android:screenOrientation="portrait" /> <!-- 投票节点查询 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.VoteQueryActivity"
+            android:screenOrientation="portrait" /> <!-- 映射记录 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TransationMapRecordActivity"
+            android:screenOrientation="portrait" /> <!-- 我的投票记录 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.MyVoteRecordActivity"
+            android:screenOrientation="portrait" /> <!-- 冷钱包转账 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SignTransferActivity"
+            android:screenOrientation="portrait" /> <!-- 投票等待 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.VoteWaitActivity"
+            android:screenOrientation="portrait" /> <!-- 金额样式 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.NumberStyleActivity"
+            android:screenOrientation="portrait" /> <!-- 资讯Web -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.NewsWebActivity"
+            android:screenOrientation="portrait" />
+        <!-- 分享功能 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SelfLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.AddressBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.AddaddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.CloudToggleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.BandAddressDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.DappsWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ColdTransferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.ImportWalletTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SendRedPacketsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.RedRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.RedRecordsSendDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.RedRecordsReceiptDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.XunfuBtnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.GetRedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.NodeDividendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.NodeDividendRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.NodeDividendRecordsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.NodeVoteDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SendDevidendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.VoteALActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.VoteAlDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.VoteZlRecordActivity"
+            android:screenOrientation="portrait" /> <!-- 切换地址 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SwitchAddressActivity"
+            android:screenOrientation="portrait" /> <!-- 代币管理 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TokenManagerActivity"
+            android:screenOrientation="portrait" /> <!-- 代币详情 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TokenDetailActivity"
+            android:screenOrientation="portrait" /> <!-- HRC-721代币详情 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TokenDetail721Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.CoinUnitActivity"
+            android:screenOrientation="portrait" /> <!-- 代币ID子页面 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TokenMoreActivity"
+            android:screenOrientation="portrait" /> <!-- 代币ID详情 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.TokenIdDetailActivity"
+            android:screenOrientation="portrait" /> <!-- 选择代币ID -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.SelectTokenIdActivity"
+            android:screenOrientation="portrait" /> <!-- 分享 -->
+        <!--数字签名-->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.DigitalSignActivity"
+            android:screenOrientation="portrait" />
+        <!--数字签名记录-->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.DigitalSignRecordActivity"
+            android:screenOrientation="portrait" />
+        <!--数字签名记录详情-->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.DigitalSignDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--数字签名成功-->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.ui.activity.DigitalSignSucceedActivity"
+            android:screenOrientation="portrait" />
+        <!-- 微信 -->
+        <activity
+            android:name="com.zhaoxi.Open_source_Android.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1107942410" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+        <uses-library android:name="android.test.runner" /> <!-- 新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 适配华为（huawei）刘海屏 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- 适配小米（xiaomi）刘海屏 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+        android:id="@+id/activity_vote_zl_details_ptrfrsh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/activity_vote_zl_details_ptrfrsh_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_18"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/dp_18"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/issue_detail_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_card_dark_bg">
+
+                        <ImageView
+                            android:id="@+id/iv_vote_status_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@mipmap/icon_vote_zl_toupiao" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_18">
+
+                            <TextView
+                                android:id="@+id/activity_vote_zl_details_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/activity_vote_zl_details_des"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/iv_vote_status"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_vote_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <!--议题发起时间-->
+                            <TextView
+                                android:id="@+id/tv_issue_start_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:alpha="0.6"
+                                android:maxLines="1"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp" />
+
+                            <!--投票倒计时-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+
+                                <TextView
+                                    android:id="@+id/tv_count_down_time_pro"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.6"
+                                    android:maxLines="1"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="12sp" />
+
+                                <!--<Open_source_Androidn_source_Android.dapp.common.view.TimeTextView-->
+                                    <!--android:id="@+id/tv_count_down_timer"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:maxLines="1"-->
+                                    <!--android:textColor="@android:color/white"-->
+                                    <!--android:textSize="12sp" />-->
+
+                                <com.zhaoxi.Open_source_Android.common.view.CountDownTextView
+                                    android:id="@+id/tv_count_down_timer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="12sp" />
+
+
+                                <com.zhaoxi.Open_source_Android.common.view.CountDownView
+                                    android:id="@+id/view_count_down"
+                                    android:layout_width="wrap_content"
+                                    android:visibility="gone"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <!--社区投票总数-->
+                            <TextView
+                                android:id="@+id/tv_vote_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:alpha="0.6"
+                                android:maxLines="1"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.zhaoxi.Open_source_Android.common.view.VoteResultView
+                        android:id="@+id/vote_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16" />
+
+                    <com.zhaoxi.Open_source_Android.common.view.VoteResultView
+                        android:id="@+id/vote_un_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_130" />
+
+
+                    <FrameLayout
+                        android:id="@+id/vote_zuohui_yuanyin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_246"
+                        android:background="@mipmap/icon_issue_vote_status_bg"
+                        android:padding="@dimen/dp_18"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_16">
+
+                            <TextView
+                                style="@style/common_txt_style_14_666"
+                                android:drawableLeft="@mipmap/icon_vote_zl_zf"
+                                android:drawablePadding="@dimen/dp_8"
+                                android:text="@string/activity_vote_gl_txt_09"
+                                android:textColor="@color/color_3C4669" />
+
+                            <TextView
+                                android:id="@+id/vote_zuohui_yuanyin_txt_des"
+                                style="@style/common_txt_style_12_999"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="作废原因固定解释，作废原因固定解释，作废原因固定解释作废原因固定解释，作废原因固定解释，作废原因固定解释作废原因固定解释，作废原因固定解释"
+                                android:textColor="@color/color_54658B" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+</LinearLayout>
+
+
+

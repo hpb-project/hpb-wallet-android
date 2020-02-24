@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5">
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/wallet_manager_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/wallet_manager_create_wallet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_2E2F47"
+            android:text="@string/me_activity_txt_01"/>
+        <View android:layout_width="@dimen/dp_0_5"
+            android:layout_height="36dp"
+            android:background="@color/color_E4E7F6"/>
+        <TextView
+            android:id="@+id/wallet_manager_import_wallet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_2E2F47"
+            android:text="@string/create_wallet_btn_import"/>
+    </LinearLayout>
+    <!--有钱包 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wallet_manager_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_toolbar"
+        android:layout_above="@id/wallet_manager_bottom"
+        android:layout_marginTop="@dimen/dp_12"
+        android:visibility="gone"/>
+
+    <!-- 没有钱包 -->
+    <LinearLayout
+        android:id="@+id/wallet_manager_layout_no_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_main_home_nowallet"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                style="@style/common_txt_style_15_333"
+                android:text="@string/txt_main_home_txt_01"/>
+            <TextView
+                android:id="@+id/wallet_manager_txt_no_wallet"
+                style="@style/common_txt_style_15_333"
+                android:textColor="@color/color_02B8F7"
+                android:padding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="@string/txt_main_home_txt_02"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

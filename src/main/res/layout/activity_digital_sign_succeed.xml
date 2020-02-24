@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.zhaoxi.Open_source_Android.ui.activity.DigitalSignActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_28"
+        android:paddingEnd="@dimen/dp_18">
+
+        <!--签名内容-->
+        <EditText
+            android:id="@+id/et_sign_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/shape_digital_sign_detail_edit_bg"
+            android:enabled="false"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_8"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:textColor="@color/color_334364"
+            android:textSize="@dimen/sp_14"
+            tools:ignore="Autofill,LabelFor,TextFields"
+            tools:text="0xB9363D58Efd4B26eFA5792a641c4b90950E6cAD20xB9363D58Efd4B26eFA5792a641c4b90950E6cAD20xB9363D586cAD20xB9363D58Efd4B26eFA5792a641c4b90950E6cAD20xB93" />
+
+        <!--复制签名内容-->
+        <Button
+            android:id="@+id/btn_copy_sign_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/selector_btn_common"
+            android:enabled="true"
+            android:text="@string/activity_digital_sign_dialog_txt_03"
+            android:textColor="@color/color_selector_common"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

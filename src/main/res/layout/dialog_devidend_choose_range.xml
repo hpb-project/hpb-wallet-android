@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/devidend_choose_range_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_18"
+                android:text="@string/activity_cion_fh_txt_10_05_01"
+                android:textColor="@color/color_293651"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/devidend_choose_range_txt_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_cion_fh_txt_10_05_04"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_02B8F7"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp_18"
+                android:textSize="14dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.zhaoxi.Open_source_Android.common.view.wheel.WheelView
+                android:id="@+id/devidend_choose_range_wheel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

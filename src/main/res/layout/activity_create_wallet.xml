@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/common_layout_style_simple"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_marginTop="35dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:background="@drawable/draw_edit_wallet_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/create_wallet_edit_name"
+                    style="@style/edit_create_wallet_psd"
+                    android:layout_marginRight="@dimen/dp_26"
+                    android:hint="@string/create_wallet_edit_name_tip"
+                    android:inputType="text"
+                    android:maxLength="12" />
+
+                <ImageView
+                    android:id="@+id/create_wallet_img_delete"
+                    style="@style/edit_right_img"
+                    android:src="@mipmap/icon_edit_delete"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/draw_edit_wallet_bg">
+
+                <TextView
+                    android:id="@+id/create_wallet_psd_stengh"
+                    style="@style/common_txt_style_14_666"
+                    android:layout_centerVertical="true"
+                    android:text="@string/create_wallet_txt_strgenth_01"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_FF4465"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/create_wallet_edit_psd"
+                    style="@style/edit_create_wallet_psd"
+                    android:layout_marginRight="@dimen/dp_26"
+                    android:layout_toRightOf="@id/create_wallet_psd_stengh"
+                    android:hint="@string/create_wallet_edit_psd_one" />
+
+                <ImageView
+                    android:id="@+id/create_wallet_img_eyes_one"
+                    style="@style/edit_right_img"
+                    android:src="@mipmap/icon_edit_psd_g" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/create_wallet_txt_psd_warn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="right|center_vertical"
+                android:text="@string/create_wallet_edit_psd_warn"
+                android:textColor="@color/color_FF4465"
+                android:textSize="@dimen/sp_12"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:background="@drawable/draw_edit_wallet_bg">
+
+                <EditText
+                    android:id="@+id/create_wallet_edit_psdtwo"
+                    style="@style/edit_create_wallet_psd"
+                    android:hint="@string/import_wallet_item_zhujici_psd_hint_three"
+                    android:layout_marginRight="@dimen/dp_26" />
+
+                <ImageView
+                    android:id="@+id/create_wallet_img_eyes_two"
+                    style="@style/edit_right_img"
+                    android:src="@mipmap/icon_edit_psd_g" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/common_layout_style_simple_hor"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="@dimen/dp_18"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/common_layout_style_simple_hor"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/import_mnemonic_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/common_checkbox_org_gray"
+                    android:drawablePadding="8dp"
+                    android:text="@string/create_wallet_txt_left"
+                    android:textColor="@color/color_9C9EB9"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/import_mnemonic_checkbox_txt_url"
+                    style="@style/common_txt_style_12_999"
+                    android:text="@string/create_wallet_txt_right"
+                    android:textColor="@color/color_4A5FE2" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/import_mnemonic_btn_import"
+                style="@style/common_btn_style_defult"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/draw_btn_defult_bg_01"
+                android:enabled="false"
+                android:text="@string/create_wallet_txt_01"
+                android:textAllCaps="false"
+                android:textColor="@color/color_2E2F47" />
+
+            <Button
+                android:id="@+id/import_mnemonic_btn_what"
+                style="@style/common_btn_style_defult"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/draw_btn_defult_bg_02"
+                android:text="@string/import_wallet_item_zhujici_btn_txt_01"
+                android:textAllCaps="false"
+                android:textColor="@color/color_2E2F47" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

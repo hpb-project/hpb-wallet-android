@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_redrecords_details_txt_address"
+                style="@style/common_txt_style_12_999"
+                android:layout_width="100dp"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textColor="#0D0E10"
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/item_redrecords_details_txt_cointype"
+                style="@style/common_txt_style_12_999"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="14dp"
+                android:text="HPB"/>
+
+            <TextView
+                android:id="@+id/item_redrecords_details_txt_allmoney"
+                style="@style/common_txt_style_12_999"
+                android:layout_toLeftOf="@id/item_redrecords_details_txt_cointype"
+                android:layout_marginRight="@dimen/dp_5"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8">
+            <TextView
+                android:id="@+id/item_redrecords_details_txt_time"
+                style="@style/common_txt_style_12_999"
+                android:textColor="#9FA1BB"
+                android:textSize="12dp"/>
+            <LinearLayout
+                android:id="@+id/item_redrecords_details_layout_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/icon_get_red_good" />
+                <TextView
+                    style="@style/common_txt_style_12_999"
+                    android:textColor="#CAA667"
+                    android:layout_marginLeft="3dp"
+                    android:text="@string/activity_red_record_txt_10"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/common_line_horizontal"
+        android:background="@color/color_E8EAF7"
+        android:layout_marginRight="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_18"/>
+</LinearLayout>

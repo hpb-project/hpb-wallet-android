@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:gravity="center_horizontal|bottom"
+        android:background="@color/color_2E2F47"
+        android:orientation="vertical">
+        <com.zhaoxi.Open_source_Android.common.view.tabview.TabPageIndicator
+            android:id="@+id/main_find_tabviews"
+            android:layout_width="200dp"
+            android:layout_height="43dp" />
+        <com.zhaoxi.Open_source_Android.common.view.tabview.UnderlinePageIndicatorEx
+            android:id="@+id/main_find_tabviews_line"
+            style="@style/CustomStyledIndicators2"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            app:selectedColor="@color/white" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_find_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+

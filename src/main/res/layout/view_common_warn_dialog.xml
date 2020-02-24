@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_common_whait_dialog"
+    android:minWidth="280dp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="@dimen/dp_52"
+        android:layout_height="@dimen/dp_52"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@mipmap/icon_dialog_warn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_18"
+        android:textColor="@color/color_black_333"
+        android:textSize="@dimen/sp_18"
+        android:text="@string/export_wallet_dialog_top_01"/>
+
+    <TextView
+        android:id="@+id/common_warn_dialog_txt_content"
+        style="@style/common_txt_style_14_666"
+        android:layout_marginTop="@dimen/dp_8"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_18"
+        android:textColor="#5D5C71"
+        android:text="@string/export_wallet_dialog_top_02"/>
+    <TextView
+        android:id="@+id/common_warn_dialog_txt_kwon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="@string/export_wallet_dialog_top_03"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/dp_18"
+        android:textSize="16sp"
+        android:background="@drawable/draw_btn_defult_bg_03"/>
+</LinearLayout>

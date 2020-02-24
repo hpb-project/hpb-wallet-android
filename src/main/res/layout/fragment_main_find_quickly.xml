@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/main_me_img_share_app_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+        android:id="@+id/recycler_with_refresh_ptr_frame_layout_quicly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.zhaoxi.Open_source_Android.common.view.recycler.LoadMoreRecyclerView
+            android:id="@+id/recycler_with_refresh_list_content_quicly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false"/>
+    </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+</LinearLayout>
+

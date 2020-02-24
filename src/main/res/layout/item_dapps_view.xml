@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dapps_item_layout_base"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/dp_18"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.zhaoxi.Open_source_Android.common.view.RoundAngleImageView
+        android:id="@+id/dapps_item_img_header"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@mipmap/icon_img_defult"
+        android:scaleType="centerCrop"
+        app:roundWidth="10dp"
+        app:roundHeight="10dp"/>
+    <TextView
+        android:id="@+id/dapps_item_txt_name"
+        style="@style/common_txt_style_12_999"
+        android:layout_width="60dp"
+        android:textSize="10dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/color_555555"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_common_whait_dialog"
+    android:minWidth="280dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_receive_warin_05"
+        android:padding="@dimen/dp_18"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/icon_receive_warin_01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18">
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginTop="4dp"
+                android:src="@mipmap/icon_receive_warin_06" />
+
+            <TextView
+                style="@style/common_txt_style_12_999"
+                android:textSize="11dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/receivables_dialog_txt_01"
+                android:textColor="#FF7817" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginTop="4dp"
+                android:src="@mipmap/icon_receive_warin_06" />
+
+            <TextView
+                style="@style/common_txt_style_12_999"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:lineSpacingExtra="2dp"
+                android:textSize="11dp"
+                android:text="@string/receivables_dialog_txt_02"
+                android:textColor="#FF7817"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_18"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_receive_warin_02" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            android:src="@mipmap/icon_receive_warin_04" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_receive_warin_03" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/view_receive_address_warn_01"
+        style="@style/common_txt_style_12_999"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/color_66688F"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="13dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/view_receive_address_btn_know"
+            style="@style/common_btn_style_defult"
+            android:layout_margin="@dimen/dp_18"
+            android:background="@mipmap/icon_btn_orgen_bg"
+            android:text="@string/receivables_dialog_txt_05"
+            android:textAllCaps="false"
+            android:textColor="@color/color_F5FF30" />
+        <TextView
+            android:id="@+id/view_receive_address_btn_nogele"
+            style="@style/common_txt_style_12_999"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_18"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/color_9C9EB9"
+            android:text="@string/receivables_dialog_txt_06"/>
+    </LinearLayout>
+
+</LinearLayout>

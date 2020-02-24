@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_main_find_news_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        style="@style/common_txt_style_14_666"
+        android:textColor="@color/color_black_333"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textStyle="bold"
+        android:text="@string/main_find_dapps_txt_01"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_find_dapps_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginBottom="@dimen/dp_18"/>
+    <TextView
+        style="@style/common_txt_style_14_666"
+        android:textColor="@color/color_black_333"
+        android:paddingTop="15dp"
+        android:paddingBottom="12dp"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/dp_18"
+        android:text="@string/main_find_news_title"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+    <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+        android:id="@+id/redrecords_send_detials_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.zhaoxi.Open_source_Android.common.view.recycler.LoadMoreRecyclerView
+            android:id="@+id/redrecords_send_detials_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false" />
+
+    </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+    <TextView
+        android:id="@+id/redrecords_send_detials_txt_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/activity_red_record_txt_08"/>
+</LinearLayout>
+
+
+

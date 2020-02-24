@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/common_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+        <com.zhaoxi.Open_source_Android.common.view.TabView
+            android:id="@+id/import_wallet_two_activity_tab_mnemonic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:umname="@string/import_wallet_item_zhujici" />
+        <com.zhaoxi.Open_source_Android.common.view.TabView
+            android:id="@+id/import_wallet_two_activity_tab_keystore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:umname="@string/import_wallet_item_keystore"/>
+        <com.zhaoxi.Open_source_Android.common.view.TabView
+            android:id="@+id/import_wallet_two_activity_tab_privatekey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:umname="@string/import_wallet_item_privatekey"/>
+        <com.zhaoxi.Open_source_Android.common.view.TabView
+            android:id="@+id/import_wallet_two_activity_tab_clodwallet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:umname="@string/import_wallet_item_coldwallet" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/import_wallet_two_activity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"/>
+</LinearLayout>

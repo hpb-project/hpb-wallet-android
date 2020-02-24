@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_choose_main_wallet_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_12"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_12">
+        <TextView
+            android:id="@+id/item_choose_main_wallet_img_header"
+            style="@style/wallet_heaer_name_txt"
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_42"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_choose_main_wallet_txt_type"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_coldwallet_dialog"
+                    android:gravity="center"
+                    android:text="@string/import_wallet_item_coldwallet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/item_choose_main_wallet_txt_name"
+                    style="@style/common_txt_style_14_666"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@id/item_choose_main_wallet_txt_type"
+                    android:text="@string/create_wallet_edit_name_hint_01"/>>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_choose_main_wallet_txt_money"
+                style="@style/common_txt_style_12_999"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="0.00000000 HPB"/>
+        </LinearLayout>
+    </LinearLayout>
+   <View style="@style/common_line_horizontal" />
+
+</LinearLayout>

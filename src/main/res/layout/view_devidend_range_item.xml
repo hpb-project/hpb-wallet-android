@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vote_item_layout_base"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_10">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dp_18">
+        <CheckBox
+            android:id="@+id/item_devidend_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_choose_devidend_range" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/item_devidend_txt_rank"
+            style="@style/common_txt_style_14_666"
+            android:text="1"
+            android:textColor="@color/color_3C4669" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_devidend_txt_address"
+        style="@style/common_txt_style_14_666"
+        android:layout_width="0dp"
+        android:layout_weight="3.5"
+        android:text="0xB9363D58Efd4B26eFA5792a641c4b90950E6cAD2"
+        android:textColor="@color/color_54658B" />
+
+    <TextView
+        android:id="@+id/item_devidend_txt_poll"
+        style="@style/common_txt_style_14_666"
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:text="23232323223"
+        android:textColor="@color/color_54658B" />
+
+</LinearLayout>

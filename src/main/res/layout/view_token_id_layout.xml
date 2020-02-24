@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingStart="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_25"
+    android:paddingBottom="@dimen/dp_10">
+
+    <TextView
+        style="@style/common_txt_style_14_666"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:text="@string/fragment_token_inventory_id"
+        android:textColor="@color/color_BABDC1" />
+
+    <TextView
+        android:id="@+id/tv_token_id"
+        style="@style/common_txt_style_14_666"
+        android:layout_marginEnd="@dimen/dp_6"
+        android:ellipsize="middle"
+        android:maxWidth="@dimen/dp_100"
+        android:singleLine="true"
+        android:textColor="@color/color_black_333" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_token_header"
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="@dimen/dp_18"
+        android:src="@mipmap/icon_default_header"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5px"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_catch_more"
+        style="@style/common_txt_style_12_999"
+        android:drawableEnd="@mipmap/icon_catch_more"
+        android:drawablePadding="@dimen/dp_4"
+        android:text="@string/to_expand_hint"
+        android:textColor="@color/color_54658B"
+        android:visibility="gone"/>
+
+</LinearLayout>

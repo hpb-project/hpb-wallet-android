@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_common_popup_window_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_activity_txt_011"
+            android:textColor="@color/color_191E25"
+            android:textSize="@dimen/sp_16" />
+
+        <com.zhaoxi.Open_source_Android.common.view.EasyPickerView
+            android:id="@+id/epv_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:epvMaxShowNum="3"
+            app:epvRecycleMode="false"
+            app:epvTextColor="@color/color_black_333"
+            app:epvTextMaxScale="1.125"
+            app:epvTextMinAlpha="0.6"
+            app:epvTextPadding="@dimen/dp_18"
+            app:epvTextSize="@dimen/sp_16" />
+
+
+        <Button
+            android:id="@+id/token_type_select_btn_submit"
+            style="@style/common_btn_style_defult"
+            android:layout_marginTop="@dimen/dp_26"
+            android:background="@drawable/bg_receive_btn_bg"
+            android:text="@string/dailog_psd_btn_ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+
+        <TextView
+            android:id="@+id/token_type_select_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="@string/dailog_psd_btn_cancle"
+            android:textColor="@color/color_334364"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+</RelativeLayout>

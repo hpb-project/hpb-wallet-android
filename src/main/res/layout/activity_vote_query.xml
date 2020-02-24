@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_theme_color"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:background="@color/white">
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_66688F"
+            android:text="@string/activity_vote_txt_10"/>
+
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_66688F"
+            android:text="@string/activity_vote_txt_11"/>
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_66688F"
+            android:text="@string/activity_vote_txt_12"/>
+        <TextView
+            style="@style/common_txt_style_12_999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/color_66688F"
+            android:gravity="center"
+            android:text="@string/activity_vote_txt_13"/>
+    </LinearLayout>
+
+    <com.zhaoxi.Open_source_Android.common.view.recycler.LoadMoreRecyclerView
+        android:id="@+id/activity_vote_query_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"/>
+</LinearLayout>

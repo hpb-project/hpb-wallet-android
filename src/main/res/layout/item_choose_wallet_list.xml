@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_choose_wallet_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_12">
+
+    <com.zhaoxi.Open_source_Android.common.view.CircleImageView
+        android:id="@+id/item_choose_wallet_img_header"
+        android:layout_width="@dimen/dp_42"
+        android:layout_height="@dimen/dp_42"
+        android:layout_centerVertical="true"
+        app:border_color="@color/white"
+        app:border_width="0dp" />
+
+    <TextView
+        android:id="@+id/item_choose_wallet_txt_name"
+        style="@style/common_txt_style_14_666"
+        android:layout_marginLeft="@dimen/dp_10" />
+</LinearLayout>

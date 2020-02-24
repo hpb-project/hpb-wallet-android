@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_250"
+                android:layout_height="@dimen/dp_250"
+                android:src="@mipmap/icon_create_wallet_succse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:paddingBottom="@dimen/dp_14"
+                android:gravity="center"
+                android:text="@string/create_wallet_succese_01"
+                android:textColor="@color/color_00BC9A"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/create_wallet_succese_btn_what"
+                style="@style/common_txt_style_14_666"
+                android:layout_marginTop="@dimen/dp_10"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/create_wallet_succese_02" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/create_wallet_succese_btn_next"
+                style="@style/common_btn_style_defult"
+                android:background="@drawable/draw_btn_defult_bg_03"
+                android:text="@string/about_activity_toast_01"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/create_wallet_succese_btn_back"
+                style="@style/common_txt_style_14_666"
+                android:text="@string/succse_create_wallet_back"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_66688F"
+                android:padding="@dimen/dp_18"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

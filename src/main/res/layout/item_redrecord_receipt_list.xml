@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_redrecords_receipt_layout_base"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/item_redrecords_receipt_img_type"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="@dimen/dp_8"/>
+            <TextView
+                android:id="@+id/item_redrecords_receipt_txt_address"
+                style="@style/common_txt_style_12_999"
+                android:layout_toRightOf="@id/item_redrecords_receipt_img_type"
+                android:layout_width="100dp"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/item_redrecords_receipt_txt_cointype"
+                style="@style/common_txt_style_12_999"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="14dp"
+                android:text="HPB"/>
+
+            <TextView
+                android:id="@+id/item_redrecords_receipt_txt_allmoney"
+                style="@style/common_txt_style_12_999"
+                android:layout_toLeftOf="@id/item_redrecords_receipt_txt_cointype"
+                android:layout_marginRight="@dimen/dp_5"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5">
+            <TextView
+                android:id="@+id/item_redrecords_receipt_txt_time"
+                style="@style/common_txt_style_12_999"
+                android:textColor="#9FA1BB"/>
+            <TextView
+                android:id="@+id/item_redrecords_receipt_txt_status"
+                style="@style/common_txt_style_12_999"
+                android:layout_alignParentRight="true"
+                android:textColor="#9FA1BB" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View style="@style/common_line_horizontal"
+        android:background="@color/color_E8EAF7"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"/>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/redrecords_receipt_detials_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_FCFCFC"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_red_record_recept_top"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_redrecords_details_txt_top_type"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@drawable/bg_white_radius_3"
+                        android:gravity="center"
+                        android:text="拼"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <com.zhaoxi.Open_source_Android.common.view.MyTextView
+                        android:id="@+id/item_redrecords_details_txt_top_address"
+                        style="@style/common_txt_style_14_666"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_18"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/redrecords_receipt_detials_txt_top_des"
+                    style="@style/common_txt_style_14_666"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="20dp"
+                    android:alpha="0.6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/redrecords_receipt_detials_txt_top_money"
+                        style="@style/common_txt_style_15_333"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        style="@style/common_txt_style_15_333"
+                        android:text=" HPB"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <com.zhaoxi.Open_source_Android.common.view.MyTextView
+                    android:id="@+id/redrecords_receipt_detials_txt_status"
+                    style="@style/common_txt_style_12_999"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

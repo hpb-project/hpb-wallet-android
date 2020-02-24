@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_main_find_news_layout"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_18">
+
+    <com.zhaoxi.Open_source_Android.common.view.RoundAngleImageView
+        android:id="@+id/item_main_find_news_img"
+        android:layout_width="120dp"
+        android:layout_height="77dp"
+        android:src="@mipmap/icon_img_defult"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@id/item_main_find_news_img">
+
+        <TextView
+            android:id="@+id/item_main_find_news_content"
+            style="@style/common_txt_style_15_333"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:maxLines="2"
+            android:textColor="#0D0E10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <TextView
+                android:id="@+id/item_main_find_news_read_num"
+                style="@style/common_txt_style_12_999"
+                android:drawableLeft="@mipmap/icon_main_news_eye"
+                android:drawablePadding="5dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_9C9EB9"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/item_main_find_news_reouce"
+                style="@style/common_txt_style_12_999"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_9C9EB9" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/common_txt_style_15_333"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/txt_main_activity_tab_find"
+        android:textColor="@color/color_191E25"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/main_find_text_redbag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_main_me_red"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textColor="@color/color_2E3550"
+            android:text="@string/main_me_manager_txt_send_redpackets" />
+        <TextView
+            android:id="@+id/main_find_text_vote"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_main_me_vote"
+            android:textSize="12dp"
+            android:textColor="@color/color_2E3550"
+            android:text="@string/activity_vote_txt_title"/>
+        <TextView
+            android:id="@+id/main_find_text_cion_fh"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_main_me_coin_fh"
+            android:textSize="12dp"
+            android:textColor="@color/color_2E3550"
+            android:text="@string/activity_cion_fh_txt_01"/>
+        <TextView
+            android:id="@+id/main_find_text_vote_gl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_main_me_vote_gl"
+            android:textSize="12dp"
+            android:textColor="@color/color_2E3550"
+            android:text="@string/activity_vote_gl_txt_01"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/main_find_text_map"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_main_me_map"
+            android:textSize="12dp"
+            android:textColor="@color/color_2E3550"
+            android:text="@string/activity_main_map_txt_title"/>
+
+        <!--数字签名-->
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/main_find_text_digital_sign"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_digital_sign"
+            android:textSize="12dp"
+            android:textColor="@color/color_2E3550"
+            android:text="@string/fragment_main_news_digital_sign_txt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/bg_white_radius_6">
+
+        <com.zhaoxi.Open_source_Android.common.view.banner.BannerView
+            android:id="@+id/main_find_cycle_viewpager_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_18" />
+    </LinearLayout>
+</LinearLayout>
+

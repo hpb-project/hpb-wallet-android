@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_F5F5F5">
+    <include layout="@layout/common_toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_18">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                style="@style/common_txt_style_15_333"
+                android:textSize="@dimen/sp_20"
+                android:layout_margin="@dimen/dp_18"
+                android:textColor="@color/color_2E2F47"
+                android:text="@string/export_mnemonic_txt_tip_01"/>
+            <TextView
+                style="@style/common_txt_style_15_333"
+                android:textColor="@color/color_9C9EB9"
+                android:gravity="center"
+                android:text="@string/salf_diallog_txt_export_mnemonic_02"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_export_mnemonic_one">
+
+                <com.zhaoxi.Open_source_Android.common.view.AutoWrapViewGroup
+                    android:id="@+id/export_mnemonic_txt_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/export_mnemonic_txt_next"
+            style="@style/common_btn_style_defult"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/draw_btn_defult_bg_03"
+            android:text="@string/export_mnemonic_txt_tip_02"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vote_item_layout_base"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_18"
+    android:layout_marginRight="@dimen/dp_18"
+    android:layout_marginBottom="@dimen/dp_18"
+    android:background="@drawable/bg_vote_myvote_layout_02"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/view_my_vote_data_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="币信中国"
+            android:textColor="#02FCFE"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view_my_vote_data_status"
+            style="@style/common_txt_style_15_333"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.39"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_2E2F47" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            style="@style/common_txt_style_14_666"
+            android:layout_centerVertical="true"
+            android:alpha="0.6"
+            android:text="@string/activity_cion_fh_txt_06"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/view_my_vote_data_02"
+            style="@style/common_txt_style_14_666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            style="@style/common_txt_style_14_666"
+            android:layout_centerVertical="true"
+            android:alpha="0.6"
+            android:text="@string/activity_vote_txt_recode_05"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/view_my_vote_data_03"
+            style="@style/common_txt_style_14_666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            style="@style/common_txt_style_14_666"
+            android:layout_centerVertical="true"
+            android:alpha="0.6"
+            android:text="@string/activity_vote_txt_recode_06"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/view_my_vote_data_04"
+            style="@style/common_txt_style_14_666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

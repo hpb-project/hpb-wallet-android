@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_below="@id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_18"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/draw_edit_wallet_bg"
+            android:layout_height="@dimen/dp_48">
+
+            <EditText
+                android:id="@+id/change_wallet_psd_edit_old"
+                style="@style/edit_create_wallet_psd"
+                android:layout_marginRight="@dimen/dp_26"
+                android:hint="@string/change_wallet_psd_edit_old" />
+
+            <ImageView
+                android:id="@+id/change_wallet_psd_img_eyes_one"
+                style="@style/edit_right_img"
+                android:src="@mipmap/icon_edit_psd_g" />
+        </RelativeLayout>
+
+        <View style="@style/common_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/draw_edit_wallet_bg">
+
+            <TextView
+                android:id="@+id/change_wallet_psd_img_strength"
+                style="@style/common_txt_style_14_666"
+                android:layout_centerVertical="true"
+                android:text="@string/create_wallet_txt_strgenth_01"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/color_FF4465"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/change_wallet_psd_edit_new1"
+                style="@style/edit_create_wallet_psd"
+                android:layout_marginRight="@dimen/dp_26"
+                android:layout_toRightOf="@id/change_wallet_psd_img_strength"
+                android:hint="@string/change_wallet_psd_edit_new1" />
+
+            <ImageView
+                android:id="@+id/change_wallet_psd_img_eyes_two"
+                style="@style/edit_right_img"
+                android:src="@mipmap/icon_edit_psd_g"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/draw_edit_wallet_bg">
+
+            <EditText
+                android:id="@+id/change_wallet_psd_edit_new2"
+                style="@style/edit_create_wallet_psd"
+                android:layout_marginRight="@dimen/dp_26"
+                android:hint="@string/change_wallet_psd_edit_new2"/>
+
+            <ImageView
+                android:id="@+id/change_wallet_psd_img_eyes_three"
+                style="@style/edit_right_img"
+                android:src="@mipmap/icon_edit_psd_g" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_below="@id/wallet_details_layout_top"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_40"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                style="@style/common_txt_style_13_999"
+                android:text="@string/change_wallet_txt_forget"/>
+            <TextView
+                android:id="@+id/change_wallet_psd_import"
+                style="@style/common_txt_style_14_666"
+                android:textColor="@color/color_2E2F47"
+                android:layout_marginTop="10dp"
+                android:text="@string/change_wallet_psd_import"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_wallet_psd_btn_submit"
+        style="@style/common_btn_style_defult"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/draw_btn_defult_bg_01"
+        android:textColor="@color/color_2E2F47"
+        android:enabled="false"
+        android:layout_margin="@dimen/dp_18"
+        android:textAllCaps="false"
+        android:text="@string/change_wallet_psd_btn_submit" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_send_devidend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_new_theme_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="375dp"
+                android:layout_height="208dp"
+                android:src="@mipmap/icon_send_dividend_top_bg"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-78dp"
+                android:background="@drawable/bg_black_radius_5"
+                android:padding="@dimen/dp_18">
+                <TextView
+                    style="@style/common_txt_style_14_666"
+                    android:text="@string/activity_cion_fh_txt_23"
+                    android:textColor="@color/color_black_333"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:background="@drawable/bg_send_devidend_ed">
+
+                    <TextView
+                        android:id="@+id/activity_send_devidend_fw_unit"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/common_txt_style_15_333"
+                        android:text="HPB"
+                        android:textColor="@color/color_black_333"/>
+                    <EditText
+                        android:id="@+id/activity_send_devidend_ed_money"
+                        android:layout_toStartOf="@id/activity_send_devidend_fw_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/activity_cion_fh_txt_10_01"
+                        android:digits="0123456789.,"
+                        android:textColor="@color/color_black_333"
+                        android:textColorHint="@color/color_BABDC1"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/activity_send_devidend_txt_allmoney"
+                    style="@style/common_txt_style_12_999"
+                    android:textColor="@color/color_BABDC1"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/activity_send_devidend_btn_confirm"
+                style="@style/common_btn_style_defult"
+                android:layout_marginTop="90dp"
+                android:textColor="@color/color_2E2F47"
+                android:background="@drawable/bg_black_radius_5"
+                android:textAllCaps="false"
+                android:text="@string/activity_cion_fh_txt_10_04" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/dp_18"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/activity_send_devidend_ttx_choose_fw"
+                    style="@style/common_txt_style_14_666"
+                    android:drawableLeft="@mipmap/icon_send_dividend_fw"
+                    android:drawablePadding="@dimen/dp_12"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/activity_cion_fh_txt_10_05"
+                    android:textColor="@color/white"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+

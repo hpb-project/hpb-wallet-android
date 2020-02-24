@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_vote_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_theme_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout
+        android:id="@+id/refresh_vote_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/vote_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:src="@mipmap/icon_vote_details_bg_01" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_vote_details_votes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="18dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/activity_vote_dteails_voting"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/icon_vote_btn_voteing"
+                    android:text="@string/activity_vote_txt_13"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_071A66"
+                    android:textSize="@dimen/dp_16" />
+
+                <Button
+                    android:id="@+id/activity_vote_dteails_cancel_vote"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@mipmap/icon_vote_btn_voteing"
+                    android:text="@string/activity_vote_txt_28"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_071A66"
+                    android:textSize="@dimen/dp_16" />
+
+                <TextView
+                    android:id="@+id/activity_vote_dteails_voteinfo_txt_changeaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_vote_chenge_address"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:padding="@dimen/dp_18"
+                    android:text="@string/activity_vote_details_txt_02"
+                    android:textColor="@color/color_02B8F7"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/activity_vote_details_votes"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_25">
+
+                        <TextView
+                            android:id="@+id/activity_vote_details_des"
+                            style="@style/common_txt_style_14_666"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="@dimen/dp_18"
+                            android:layout_marginBottom="20dp"
+                            android:background="@mipmap/icon_vote_details_bg"
+                            android:maxLines="8"
+                            android:paddingLeft="@dimen/dp_18"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingRight="@dimen/dp_18"
+                            android:paddingBottom="28dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        style="@style/layout_vote_details_style"
+                        android:layout_marginRight="@dimen/dp_18">
+
+                        <TextView
+                            style="@style/common_txt_style_14_666"
+                            android:text="@string/activity_vote_txt_14"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/activity_vote_details_poll"
+                            style="@style/common_txt_style_14_666"
+                            android:layout_alignParentRight="true"
+                            android:text="0"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:layout_marginRight="@dimen/dp_18"
+                        android:background="@color/base_theme_color" />
+
+                    <RelativeLayout
+                        style="@style/layout_vote_details_style"
+                        android:layout_marginRight="@dimen/dp_18">
+
+                        <TextView
+                            style="@style/common_txt_style_14_666"
+                            android:text="@string/activity_vote_txt_15"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/activity_vote_details_poll_day"
+                            style="@style/common_txt_style_14_666"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/activity_vote_dteails_layout_wait"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99040723"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/common_web_view_progressBar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@drawable/common_progress_color" />
+
+                <TextView
+                    android:id="@+id/activity_vote_dteails_txt_wait"
+                    style="@style/common_txt_style_14_666"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/activity_vote_txt_32"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.zhaoxi.Open_source_Android.common.view.refresh.MyPtrFrameLayout>
+</LinearLayout>

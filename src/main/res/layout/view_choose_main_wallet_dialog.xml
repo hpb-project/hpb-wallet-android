@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_height"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    style="@style/common_txt_style_15_333"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_252735"
+                    android:text="@string/main_home_content_txt_allmoney"
+                    android:textSize="16dp" />
+                <LinearLayout
+                    android:id="@+id/item_choose_main_wallet_layout_eyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp">
+                    <ImageView
+                        android:id="@+id/item_choose_main_wallet_eyes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_choose_main_wallet_txt_allmoney"
+                android:textColor="@color/color_252735"
+                style="@style/common_txt_style_15_333"
+                android:paddingLeft="@dimen/dp_12"/>
+
+            <View
+                style="@style/common_line_horizontal"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_12" />
+
+            <TextView
+                style="@style/common_txt_style_15_333"
+                android:textColor="@color/color_252735"
+                android:padding="@dimen/dp_12"
+                android:text="@string/main_home_pop_choose_wallet_title" />
+
+            <View
+                style="@style/common_line_horizontal"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <ListView
+                android:id="@+id/item_choose_main_wallet_list"
+                style="@style/common_noline_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:dividerHeight="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_choose_main_wallet_create_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="vertical">
+
+            <View style="@style/common_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/common_txt_style_14_666"
+                    android:drawableLeft="@mipmap/icon_main_add_wallet"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/create_wallet_txt_01" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

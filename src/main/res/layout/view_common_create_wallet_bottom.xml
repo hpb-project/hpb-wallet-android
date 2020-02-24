@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_18"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        style="@style/common_layout_style_simple_hor"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/import_mnemonic_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_wallet_txt_left"
+            android:button="@null"
+            android:drawableLeft="@drawable/common_checkbox_org_gray"
+            android:drawablePadding="8dp"
+            android:textColor="@color/color_2E2F47"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/import_mnemonic_checkbox_txt_url"
+            style="@style/common_txt_style_12_999"
+            android:textSize="13dp"
+            android:text="@string/create_wallet_txt_right"
+            android:textColor="@color/color_4A5FE2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/import_mnemonic_btn_import"
+        style="@style/common_btn_style_defult"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="@color/color_2E2F47"
+        android:background="@drawable/draw_btn_defult_bg_01"
+        android:enabled="false"
+        android:textAllCaps="false"
+        android:text="@string/dailog_psd_btn_ok" />
+
+    <LinearLayout
+        style="@style/common_layout_style_simple"
+        android:layout_margin="@dimen/dp_25"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/import_mnemonic_btn_what"
+            style="@style/common_txt_style_14_666"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/color_4A5FE2" />
+    </LinearLayout>
+</LinearLayout>
+

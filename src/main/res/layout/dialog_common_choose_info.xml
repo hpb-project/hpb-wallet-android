@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_choose_info_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_red_get_txt_01"
+                android:textColor="@color/color_2E2F47"
+                android:textSize="16dp" />
+            <ImageView
+                android:id="@+id/common_choose_info_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp_12"
+                android:src="@mipmap/icon_getred_choose_wallet_close"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:orientation="horizontal">
+
+            <com.zhaoxi.Open_source_Android.common.view.wheel.WheelView
+                android:id="@+id/common_choose_info_wheel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/common_choose_info_sure"
+            style="@style/common_btn_style_defult"
+            android:background="@drawable/draw_btn_defult_bg_03"
+            android:text="@string/activity_red_get_txt_02"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp_18"/>
+    </LinearLayout>
+</RelativeLayout>

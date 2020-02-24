@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/draw_address_layout"
+    android:layout_width="360dp"
+    android:layout_height="535dp"
+    android:background="@mipmap/icon_receive_share_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="425dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_18">
+        <TextView
+            style="@style/common_txt_style_14_666"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/receive_activity_txt_top_04"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/white"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/draw_address_img_qr"
+                android:layout_width="162dp"
+                android:layout_height="162dp"
+                android:src="@mipmap/icon_create_qr_defult" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/common_txt_style_15_333"
+            android:textSize="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/wallet_manager_txt_money_unit_01"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/draw_address_txt_address"
+            style="@style/common_txt_style_12_999"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:text="0xB9363D58Efd4B26eFA5792a641c4b90950E6cAD2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_receive_share_big_logo"/>
+    </LinearLayout>
+</LinearLayout>

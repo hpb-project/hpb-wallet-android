@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_18">
+        <LinearLayout
+            android:id="@+id/import_mnemonic_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            android:background="@color/color_F5F5F8"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/color_9C9EB9"
+                android:gravity="center"
+                android:text="@string/fragment_import_mne_txt_top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_01"
+                    style="@style/mnemonic_search_edit" />
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_02"
+                    style="@style/mnemonic_search_edit"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_03"
+                    style="@style/mnemonic_search_edit"
+                    android:layout_marginRight="0dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_04"
+                    style="@style/mnemonic_search_edit"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_05"
+                    style="@style/mnemonic_search_edit"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_06"
+                    style="@style/mnemonic_search_edit"
+                    android:layout_marginRight="0dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_07"
+                    style="@style/mnemonic_search_edit"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_08"
+                    style="@style/mnemonic_search_edit"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_09"
+                    style="@style/mnemonic_search_edit"
+                    android:layout_marginRight="0dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_10"
+                    style="@style/mnemonic_search_edit"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_11"
+                    style="@style/mnemonic_search_edit"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_content_12"
+                    style="@style/mnemonic_search_edit"
+                    android:layout_marginRight="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/import_mnemonic_edit_content"
+            style="@style/edit_import_mnemonic"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            style="@style/common_layout_style_simple"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_18">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:background="@drawable/draw_edit_wallet_bg">
+                <TextView
+                    android:id="@+id/import_mnemonic_img_strength"
+                    style="@style/common_txt_style_14_666"
+                    android:layout_centerVertical="true"
+                    android:text="@string/create_wallet_txt_strgenth_01"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_FF4465"
+                    android:visibility="gone"/>
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_psd_one"
+                    style="@style/edit_create_wallet_psd"
+                    android:layout_marginRight="@dimen/dp_26"
+                    android:hint="@string/create_wallet_edit_psd_one"
+                    android:layout_toRightOf="@id/import_mnemonic_img_strength"/>
+
+                <ImageView
+                    android:id="@+id/import_mnemonic_img_eyes_one"
+                    style="@style/edit_right_img"
+                    android:src="@mipmap/icon_edit_psd_g" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/import_mnemonic_txt_psd_warn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="right|center_vertical"
+                android:text="@string/create_wallet_edit_psd_warn"
+                android:textColor="@color/color_FF4465"
+                android:textSize="@dimen/sp_11"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:background="@drawable/draw_edit_wallet_bg">
+
+                <EditText
+                    android:id="@+id/import_mnemonic_edit_psd_two"
+                    style="@style/edit_create_wallet_psd"
+                    android:layout_marginRight="@dimen/dp_26"
+                    android:hint="@string/import_wallet_item_zhujici_psd_hint_three"/>
+
+                <ImageView
+                    android:id="@+id/import_mnemonic_img_eyes_two"
+                    style="@style/edit_right_img"
+                    android:src="@mipmap/icon_edit_psd_g" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/view_common_create_wallet_bottom" />
+    </LinearLayout>
+</ScrollView>

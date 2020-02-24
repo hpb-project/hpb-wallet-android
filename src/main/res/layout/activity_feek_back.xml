@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingRight="@dimen/dp_18">
+
+                <TextView
+                    style="@style/common_txt_style_15_333"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_feekcack_txt_01" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/activity_feekbac_tab_01"
+                        style="@style/radio_btn_feekback_style"
+                        android:checked="true"
+                        android:text="@string/activity_feekcack_txt_02"/>
+                    <RadioButton
+                        android:id="@+id/activity_feekbac_tab_02"
+                        style="@style/radio_btn_feekback_style"
+                        android:text="@string/activity_feekcack_txt_03"/>
+                    <RadioButton
+                        android:id="@+id/activity_feekbac_tab_03"
+                        style="@style/radio_btn_feekback_style"
+                        android:text="@string/activity_feekcack_txt_04"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                style="@style/common_line_horizontal"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginTop="@dimen/dp_18"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingRight="@dimen/dp_18">
+
+                <TextView
+                    android:id="@+id/feek_txt_title_01"
+                    style="@style/common_txt_style_15_333"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_feekcack_txt_05" />
+                <EditText
+                    android:id="@+id/activity_feekback_edit_theme"
+                    style="@style/edit_create_wallet_psd"
+                    android:layout_toRightOf="@id/feek_txt_title_01"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:layout_marginRight="0dp"
+                    android:hint="@string/txt_feekbook_hint_title"
+                    android:inputType="text" />
+            </RelativeLayout>
+            <View
+                style="@style/common_line_horizontal"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_26"
+                android:background="@drawable/bg_feekback_content">
+                <EditText
+                    android:id="@+id/activity_feekback_edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColorHint="@color/color_9C9EB9"
+                    android:textColor="@color/color_9C9EB9"
+                    android:textSize="@dimen/sp_15"
+                    android:minLines="3"
+                    android:gravity="top"
+                    android:hint="@string/activity_feekcack_txt_06"/>
+                <com.zhaoxi.Open_source_Android.common.view.SelectGridView
+                    android:id="@+id/activity_feekback_select_photo"
+                    style="@style/gridview_select_phone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginTop="@dimen/dp_18"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingRight="@dimen/dp_18"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/common_txt_style_15_333"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_feekcack_txt_07" />
+                <EditText
+                    android:id="@+id/activity_feekback_edit_lianxiway"
+                    style="@style/edit_create_wallet_psd"
+                    android:layout_marginRight="0dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:hint="@string/activity_feekcack_txt_08"
+                    android:inputType="text" />
+            </LinearLayout>
+            <View
+                style="@style/common_line_horizontal"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8" />
+            <Button
+                android:id="@+id/activity_feekback_content_submit"
+                style="@style/common_btn_style_defult"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:layout_marginBottom="@dimen/dp_18"
+                android:layout_marginTop="@dimen/dp_48"
+                android:background="@drawable/draw_btn_defult_bg_03"
+                android:text="@string/txt_feekbook_btn_submit"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

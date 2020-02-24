@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_map_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp_18"
+        android:background="@drawable/bg_white_radius_6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_18">
+
+            <TextView
+                android:id="@+id/transfer_activity_txt_address_01"
+                style="@style/common_txt_style_13_999"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_main_map_txt_07"
+                android:textColor="@color/color_2E2F47" />
+            <TextView
+                android:id="@+id/map_transfer_activity_to_address"
+                android:layout_toRightOf="@id/transfer_activity_txt_address_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_66688F"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:gravity="right"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        <View style="@style/common_line_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_18">
+
+            <TextView
+                android:id="@+id/transfer_activity_txt_address_03"
+                style="@style/common_txt_style_13_999"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_main_map_txt_08"
+                android:textColor="@color/color_2E2F47" />
+
+            <TextView
+                android:id="@+id/map_transfer_activity_from_address"
+                android:layout_toRightOf="@id/transfer_activity_txt_address_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_66688F"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        <View style="@style/common_line_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_18"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/txt_transfer_01"
+                style="@style/common_txt_style_13_999"
+                android:layout_centerVertical="true"
+                android:text="@string/total_activity_txt_new_03"
+                android:textColor="@color/color_2E2F47" />
+
+            <TextView
+                android:id="@+id/transfer_one_txt"
+                style="@style/common_txt_style_13_999"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/wallet_manager_txt_money_unit_01" />
+
+            <ImageView
+                android:id="@+id/map_transfer_activity_img_delete"
+                android:layout_toLeftOf="@id/transfer_one_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/icon_edit_delete"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/map_transfer_activity_edit_money"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toLeftOf="@id/map_transfer_activity_img_delete"
+                android:layout_toRightOf="@id/txt_transfer_01"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/transfer_activity_txt_07"
+                android:digits="0123456789.,"
+                android:singleLine="true"
+                android:textColor="@color/color_66688f"
+                android:textColorHint="@color/color_bebec3"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+        <View style="@style/common_line_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="right|center_vertical">
+            <TextView
+                android:id="@+id/map_transfer_activity_shenyu_money"
+                style="@style/common_txt_style_12_999"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:textColor="@color/color_66688F"/>
+            <TextView
+                style="@style/common_txt_style_12_999"
+                android:text="@string/total_activity_txt_new_04"
+                android:textColor="@color/color_66688F"/>
+            <TextView
+                android:id="@+id/map_transfer_activity_txt_all"
+                style="@style/common_txt_style_12_999"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="@dimen/dp_18"
+                android:text="@string/transfer_activity_txt_06"
+                android:textColor="@color/color_4A5FE2" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/transfer_activity_txt_address_02"
+                style="@style/common_txt_style_13_999"
+                android:layout_centerVertical="true"
+                android:text="@string/transfer_activity_txt_10"
+                android:textColor="@color/color_2E2F47" />
+            <ImageView
+                android:id="@+id/map_transfer_activity_fee_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/icon_transfer_fee_des"/>
+            <TextView
+                android:id="@+id/map_transfer_activity_fee_money"
+                android:layout_toLeftOf="@id/map_transfer_activity_fee_des"
+                android:layout_toRightOf="@id/transfer_activity_txt_address_02"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/color_66688F"
+                android:textSize="13sp"
+                android:gravity="right|center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        style="@style/common_txt_style_12_999"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_18"
+        android:textColor="@color/color_FF4465"
+        android:text="@string/transfer_activity_txt_04"/>
+
+    <Button
+        android:id="@+id/map_transfer_activity_btn_submit"
+        style="@style/common_btn_style_defult"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/draw_btn_defult_bg_01"
+        android:enabled="false"
+        android:textAllCaps="false"
+        android:text="@string/activity_main_map_txt_05"
+        android:textColor="@color/color_2E2F47" />
+</LinearLayout>
